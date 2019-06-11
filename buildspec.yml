@@ -8,4 +8,4 @@ phases:
       - pip install -U awscli
   build:
     commands:
-      - aws s3 sync sources/* s3://tampermonkey-scrypts/
+      - aws s3 sync --acl public-read source s3://tampermonkey-scrypts
